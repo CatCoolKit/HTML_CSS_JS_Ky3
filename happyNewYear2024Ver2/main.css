@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi|Muli|Righteous');
+
+/* 
+font-family: 'Righteous', cursive;
+font-family: 'Baloo Thambi', cursive;
+font-family: 'Muli', sans-serif;
+*/
+::selection {
+    background-color: transparent;
+
+}
+
+body {
+    color: #303030;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    user-select: none;
+    background-image: url('./image/bat-tron-99-hinh-nen-mat-trang-dep-nhat-lam-hinh-nen-may-tinh_6.jpg');
+    background-size: cover; /* Sử dụng cover để ảnh background hiển thị toàn bộ màn hình */
+    background-repeat: no-repeat;
+}
+
+canvas {
+    display: block;
+}
+
+.block-audio {
+    display: none;
+}
+
+.mahi_wish {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #cacaca;
+}
+
+.mahi_wish p span {
+    display: block;
+    font-family: 'Baloo Thambi', cursive;
+    letter-spacing: initial;
+}
+
+.mahi_wish p {
+    font-size: 90px;
+    line-height: 1.5;
+    letter-spacing: 4.5px;
+    font-family: 'Carattere', cursive;
+}
+
+.mahi_wish p span i {
+    font-style: normal;
+    color: #F44336;
+}
+
+p.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+}
+
+p.fixed span {
+    position: absolute;
+    right: 5%;
+    font-size: 12px;
+    color: #FFEB3B;
+}
+
+.center-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#showButton {
+    padding: 20px, 20px;
+    /* Điều chỉnh padding để tạo kích thước phù hợp cho nút */
+    font-size: 30px;
+    /* Điều chỉnh kích thước chữ */
+    font-weight: 700;
+    background-color: #d1b1bf;
+    color: #bb1191;
+    border: 7px solid #bb1191;
+    border-radius: 5px;
+    margin-top: 100px;
+
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+    transition: transform 0.3s ease 0s, background-color 0.3s, color 0.3s;
+
+
+    /* cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 600%); */
+}
+
+#showButton:hover {
+    transform: translateY(-10px);
+    background-color: #bb1191;
+    color: #d1b1bf;
+}
+
+#characterAN {
+    position: fixed;
+    top: 0;
+    margin-top: 645px;
+}
+
+#characterAN img {
+    width: 100px;
+}
+
+#characterAN img {
+    animation: marquee 10s linear infinite;
+}
+
+#filter img{
+    position: fixed;
+    display: flex;
+    width: 150px;
+    top: 0;
+    margin-top: 50px;
+}
+
+#filter1 img{
+    position: fixed;
+    display: flex;
+    width: 145px;
+    top: 0;
+    margin-left: 1385px;
+}
+/* Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX(1500px);
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .mahi_wish p {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+    }
+}
+
+
+
+#loadingAnimation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#loader {
+    top: 50px;
+    width: 500px;
+    height: 50px;
+    position: relative;
+    border: 1px solid #131111; /* Màu nền của thanh loading */
+    border-radius: 30px;
+    padding: 10px;
+    
+}
+
+#loader:after {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db; 
+    font-weight: bold;
+}
+
+#progress {
+    width: 200px;
+    height: 100%;
+    background-color: #c12076; /* Màu sắc của thanh loading */
+    border-radius: 30px;
+    animation: progress 6s forwards cubic-bezier(0,0,0,0); /* Hiệu ứng tiến trình */
+    position: relative;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    color: white; /* Màu chữ */
+    font-weight: bold; /* Độ đậm của chữ */
+}
+
+#toolTip {
+    position: relative;
+    top: 30px;
+    animation: leftToright 6.3s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes leftToright {
+    from {
+        transform: translateX(-250px);
+    }
+    to {
+        transform: translateX(250px);
+    }
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Day 1</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+
+    <div id="container">
+        <div id="div1">
+            <h1 id="people">People entered</h1>
+            <h2 id="count-el">0</h2>
+            <button id="increment-btn" onclick="increment()">Click to Increment</button>
+            <p></p>
+            <button id="save-btn" onclick="save()">Save</button>
+            <p></p>
+        </div>
+     
+    </div>
+    <div id="container">
+        <p id="save-el">Previous entires: </p>
+    </div>
+    
+    <div>
+        <img src="image/IMG_1959.PNG" alt="" width="300px">
+        <p style="color: aliceblue;">Product One</p>
+        <button onclick="purcharse()">Purcharse - $149</button>
+        <p id="error" style="color: red;"></p>
+        
+    </div>
+
+    <div>
+
+        <span style="color: aliceblue;" id="num1-el"></span>
+        <span style="color: aliceblue;" id="num2-el"></span>
+        <br>
+        <button onclick="Add()">Add</button>
+        <button onclick="Subtract()">Subtract</button>
+        <button onclick="Divide()">Divide</button>
+        <button onclick="Multiply()">Multiply</button>
+        <br>
+        <p style="color: aliceblue;" id="result-el">Result: </p>
+    </div>
+
+    <div id="blackjack">
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards: </p>
+        <p id="sum-el">Sum: </p>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="newCard()()">New Card</button>
+        <p id="player-el"></p>
+    </div>
+
+    <div id="save-input">
+        <input type="text" id="input-el">
+        <button id="input-btn">Save Input</button>
+        <button id="tab-btn">Save Tab</button>
+        <button id="delete-btn">Delete All</button>
+        <ul id="ul-el" style="color: white;">
+            
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

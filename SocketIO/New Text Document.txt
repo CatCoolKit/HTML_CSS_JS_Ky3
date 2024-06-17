@@ -1,0 +1,10 @@
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy -Scope CurrentUser Undefined
+Set-ExecutionPolicy RemoteSigned 
+Set-ExecutionPolicy Undefined
+Get-ExecutionPolicy -list
+
+Set-ExecutionPolicy Bypass -Scope Process
+Set-ExecutionPolicy Undefined -Scope Process
+net start winnat
+net stop winnat
