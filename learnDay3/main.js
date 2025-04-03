@@ -6,7 +6,7 @@
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyAFRMHHnDmTll6Betml7XIfdHLReEUph3c",
+    apiKey: "",
     authDomain: "realtime-database-530d9.firebaseapp.com",
     databaseURL: "https://realtime-database-530d9-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "realtime-database-530d9",
